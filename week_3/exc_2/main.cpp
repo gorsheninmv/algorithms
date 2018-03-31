@@ -27,7 +27,7 @@ void count_sort(char * _dat, int * _in_idx, int * _out_idx, int _in_out_sz, long
         auto cnt_pt = _cnt_b + calc_ascii_offset(*pt); // указатель на элемент-счетчик для значения *pt
         ++*cnt_pt;
     }
-    
+
     long long sum = 0;
     for (auto pt = _cnt_b; pt != _cnt_e; ++pt) {
         sum += *pt;
